@@ -47,25 +47,28 @@ h2 {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 /* Estilo de las imágenes */
 .interactive-image {
-    width: 150px;
-    height: auto;
+    max-width: 100%;  /* Para mantener las proporciones */
+    height: auto; /* Mantiene las proporciones de la imagen */
     transition: transform 0.3s ease, filter 0.3s ease;
     border-radius: 10px;
 }
 
 /* Efecto hover para la imagen central */
 .central-image:hover {
-    transform: scale(1.7); /* Aumentar el tamaño al 70% de la pantalla */
+    transform: scale(1.7); /* Aumenta el tamaño de la imagen al pasar el cursor */
     transition: transform 0.5s ease;
-    z-index: 1; /* Asegura que se vea por encima de las otras imágenes */
+    z-index: 1; /* Asegura que la imagen central esté por encima de las demás */
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.7); /* Efecto de sombra con el color metálico */
 }
 
 /* Efecto hover general para las imágenes */
 .interactive-image:hover {
-    transform: scale(1.1) translate(10px, -10px);
+    transform: scale(1.1) translate(10px, -10px); /* Efecto leve de mover y aumentar tamaño */
     filter: brightness(1.2);
 }
+
