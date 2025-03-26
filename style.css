@@ -1,6 +1,8 @@
-/* Asegura que la imagen se vea correctamente */
-img {
-    width: 100 vw;
-    height: auto;
-    display: block;
+body {
+    background-image: url("SCROLL LOW REAL.jpeg"); /* Usa la imagen como fondo */
+    background-size: cover;  /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    height: 100 vh;  /* Hace que el fondo cubra toda la altura visible */
+    margin: 0;  /* Elimina espacios alrededor */
 }
