@@ -1,38 +1,44 @@
-/* Aplica la imagen de fondo con scroll largo */
 body {
-    margin: 0;
-    padding: 0;
-    background: url('BACKGROUNDLOW.jpg') no-repeat top center;
-    background-size: 100% auto; /* Ancho completo, alto ajustable */
-    background-attachment: fixed; /* La imagen no se mueve mientras haces scroll */
-    opacity: 0.7; /* Opacidad del 70% */
-    min-height: 200 vh; /* Hace que la página sea más larga para que haya desplazamiento */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar relleno por defecto */
+    height: 100 vh; /* Asegura que el body tenga altura completa de la ventana */
 }
 
-/* Estilos del encabezado */
-header {
+.main-container {
+    position: relative;
+    height: 100 vh; /* Asegura que el contenedor tenga altura de la ventana */
+    width: 100 %;
+}
+
+.background {
+    background-image: url('https://github.com/TU_USUARIO/TU_REPOSITORIO/raw/main/BACKGROUNDLOW.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center top; /* Centra la imagen */
+    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    opacity: 0.7; /* Aplica opacidad solo a la imagen */
+    height: 100 %; /* Asegura que ocupe toda la altura */
+    width: 100 %; /* Asegura que ocupe todo el ancho */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
     text-align: center;
     padding: 20 px;
-    color: #D6C7FF; /* Lavanda vibrante */
+    color: #D3D3A1; /* Amarillo pálido para el subtexto */
+    font-family: 'Arial', sans-serif;
 }
 
-/* Tipografía */
 h1 {
-    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
-    font-size: 3 rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 2 px 2 px 10 px rgba (255, 255, 255, 0.8); /* Efecto de brillo */
+    font-family: 'Futura', sans-serif;
+    font-size: 3 em; /* Ajusta tamaño de fuente */
+    color: #B5A9D4; /* Gris lavanda vibrante */
+    text-shadow: 2 px 2 px 5 px rgba (0, 0, 0, 0.5); /* Efecto metalizado */
 }
 
 p {
-    font-family: 'Merriweather', serif;
-    font-size: 1.2 rem;
-    color: #F5DEB3; /* Amarillo pálido */
-}
-
-/* Espaciado del contenido */
-.content {
-    padding: 50 px;
-    text-align: center;
+    font-size: 1.5 em;
 }
