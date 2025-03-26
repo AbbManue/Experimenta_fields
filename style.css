@@ -11,7 +11,7 @@ body {
 }
 
 .background {
-    background-image: url('https://github.com/TU_USUARIO/TU_REPOSITORIO/raw/main/BACKGROUNDLOW.jpg');
+    background-image: url('BACKGROUNDLOW.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center top; /* Centra la imagen */
     background-attachment: fixed; /* Fondo fijo al hacer scroll */
