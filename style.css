@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('BACKGROUNDLOW.jpg') no-repeat top center;
+    background: url('https://github.com/AbbManue/Experimenta_fields/blob/main/BACKGROUNDLOW.jpg?raw=true') no-repeat top center;
     background-size: 100% auto; /* Ancho completo, alto ajustable */
     background-attachment: fixed; /* La imagen no se mueve mientras haces scroll */
     opacity: 0.7; /* Opacidad del 70% */
