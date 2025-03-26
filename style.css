@@ -52,7 +52,7 @@ h2 {
 
 /* Estilo de las imágenes */
 .interactive-image {
-    max-width: 100%;  /* Para mantener las proporciones */
+    max-width: 40%;  /* Para mantener las proporciones */
     height: auto; /* Mantiene las proporciones de la imagen */
     transition: transform 0.3s ease, filter 0.3s ease;
     border-radius: 10px;
