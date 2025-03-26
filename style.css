@@ -1,21 +1,22 @@
 /* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;
+    background-color: #2a2a2a; /* Fondo oscuro */
+    color: #fff;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-/* Encabezados */
+/* Encabezados principales (Título) */
 h1 {
     font-size: 3 vw; /* Ajustable */
     color: #6a5acd; /* Gris lavanda vibrante */
     text-transform: uppercase;
-    text-shadow: 2 px 2 px 5 px rgba (255, 255, 255, 0.5);
+    text-shadow: 0 0 10 px #fff, 0 0 20 px #fff, 0 0 30 px #6a5acd; /* Efecto metalizado */
 }
 
+/* Subtítulos */
 h2 {
     font-size: 2 vw;
     color: #d4af37; /* Amarillo pastel */
@@ -41,13 +42,21 @@ h2 {
     height: auto; /* Mantiene la proporción */
     border-radius: 10 px;
     transition: transform 0.3 s ease-in-out;
+    object-fit: cover; /* Hace que la imagen se recorte para llenar el contenedor sin distorsión */
 }
 
+/* Efecto al pasar el cursor en todas las imágenes */
 .interactive-image:hover {
-    transform: scale (1.2); /* Efecto de agrandado */
+    transform: scale (1.2); /* Aumenta todas las imágenes un 20% */
 }
 
-/* Imagen Central (Se amplía más) */
+/* Imagen Central (Se amplía más que las otras) */
 .main-image:hover {
-    transform: scale (1.7); /* Se agranda más que las otras */
+    transform: scale (2); /* Aumenta la imagen central el doble */
+}
+
+/* Pie de página */
+footer {
+    font-size: 1 rem;
+    margin-top: 20 px;
 }
