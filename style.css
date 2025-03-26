@@ -1,21 +1,27 @@
-body {
+/* Reseteo de márgenes y rellenos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     height: 100 vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
 }
 
 .main-container {
     position: relative;
-    height: 100 vh; 
+    height: 100 vh;
     width: 100 %;
 }
 
 .background {
-    background-image: url('BACKGROUNDLOW.jpg'); 
-    background-size: cover;
+    background-image: url('MANUE WEB.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
     background-position: center center;
-    background-attachment: fixed;
-    opacity: 0.7;
+    background-attachment: fixed; /* Efecto de scroll de fondo */
     height: 100 %;
     width: 100 %;
     position: absolute;
@@ -28,17 +34,18 @@ body {
     z-index: 1;
     text-align: center;
     padding: 20 px;
-    color: #D3D3A1; 
-    font-family: 'Arial', sans-serif;
+    color: #f0e68c; /* Amarillo pálido */
 }
 
 h1 {
-    font-family: 'Futura', sans-serif;
-    font-size: 3 em; 
-    color: #B5A9D4;
-    text-shadow: 2 px 2 px 5 px rgba (0, 0, 0, 0.5); 
+    font-family: 'Futura', sans-serif; /* Tipo de letra futurista */
+    font-size: 3 em;
+    color: #b5a9d4; /* Gris lavanda */
+    text-shadow: 2 px 2 px 5 px rgba (255, 255, 255, 0.6); /* Efecto metálico y brillo */
 }
 
 p {
     font-size: 1.5 em;
+    color: #f0e68c;
+    text-shadow: 2 px 2 px 8 px rgba (0, 0, 0, 0.5); /* Sombra dura para el subtítulo */
 }
