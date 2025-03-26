@@ -1,23 +1,23 @@
 body {
-    margin: 0; /* Eliminar márgenes por defecto */
-    padding: 0; /* Eliminar relleno por defecto */
-    height: 100 vh; /* Asegura que el body tenga altura completa de la ventana */
+    margin: 0;
+    padding: 0;
+    height: 100 vh;
 }
 
 .main-container {
     position: relative;
-    height: 100 vh; /* Asegura que el contenedor tenga altura de la ventana */
+    height: 100 vh; 
     width: 100 %;
 }
 
 .background {
-    background-image: url('BACKGROUNDLOW.jpg');
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center top; /* Centra la imagen */
-    background-attachment: fixed; /* Fondo fijo al hacer scroll */
-    opacity: 0.7; /* Aplica opacidad solo a la imagen */
-    height: 100 %; /* Asegura que ocupe toda la altura */
-    width: 100 %; /* Asegura que ocupe todo el ancho */
+    background-image: url('BACKGROUNDLOW.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.7;
+    height: 100 %;
+    width: 100 %;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,18 +25,18 @@ body {
 
 .header {
     position: relative;
-    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    z-index: 1;
     text-align: center;
     padding: 20 px;
-    color: #D3D3A1; /* Amarillo pálido para el subtexto */
+    color: #D3D3A1; 
     font-family: 'Arial', sans-serif;
 }
 
 h1 {
     font-family: 'Futura', sans-serif;
-    font-size: 3 em; /* Ajusta tamaño de fuente */
-    color: #B5A9D4; /* Gris lavanda vibrante */
-    text-shadow: 2 px 2 px 5 px rgba (0, 0, 0, 0.5); /* Efecto metalizado */
+    font-size: 3 em; 
+    color: #B5A9D4;
+    text-shadow: 2 px 2 px 5 px rgba (0, 0, 0, 0.5); 
 }
 
 p {
