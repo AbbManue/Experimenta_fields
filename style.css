@@ -1,31 +1,71 @@
-/* Estilo para la galería */
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía sobria para el texto */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo claro para no cargar mucho el contraste */
+}
+
+header {
+    background-color: #222; /* Fondo oscuro para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif; /* Tipografía futurista para el encabezado */
+    font-size: 3em;
+    color: #00bcd4; /* Un color metálico para el encabezado */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #00bcd4; /* Efecto de neón metálico */
+}
+
+p {
+    font-size: 1.2em;
+    color: #333; /* Tono quebrado para el cuerpo del texto */
+}
+
+/* Estilo de la galería */
 .gallery {
     text-align: center;
     margin-top: 50px;
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif; /* Tipografía futurista para los subtítulos */
+    font-size: 2.5em;
+    color: #00bcd4;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #00bcd4;
 }
 
 /* Contenedor de las imágenes */
 .image-container {
     display: flex;
     justify-content: center;
-    gap: 20px;  /* Espacio entre las imágenes */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Estilo de las imágenes */
 .interactive-image {
-    width: 150px; /* Tamaño pequeño de la imagen */
+    width: 150px;
     height: auto;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para el movimiento */
-    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 10px;
 }
 
-/* Efecto cuando el usuario pasa el cursor sobre la imagen */
+/* Efecto hover para la imagen central */
+.central-image:hover {
+    transform: scale(1.7); /* Aumentar el tamaño al 70% de la pantalla */
+    transition: transform 0.5s ease;
+    z-index: 1; /* Asegura que se vea por encima de las otras imágenes */
+}
+
+/* Efecto hover general para las imágenes */
 .interactive-image:hover {
-    transform: scale(1.1) translate(10px, -10px); /* Hace que la imagen crezca un poco y se desplace ligeramente */
-    filter: brightness(1.2); /* Hace que la imagen se ilumine un poco */
+    transform: scale(1.1) translate(10px, -10px);
+    filter: brightness(1.2);
 }
