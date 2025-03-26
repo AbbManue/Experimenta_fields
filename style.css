@@ -1,8 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el desplazamiento */
+    width: 100 vw;
+    height: 100 vh;
+}
+
 body {
-    background-image: url("SCROLL LOW REAL.jpeg"); /* Usa la imagen como fondo */
-    background-size: cover;  /* Ajusta la imagen para que cubra toda la pantalla */
-    background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat;  /* Evita que la imagen se repita */
-    height: 100 vh;  /* Hace que el fondo cubra toda la altura visible */
-    margin: 0;  /* Elimina espacios alrededor */
+    background-image: url("SCROLL LOW REAL.jpeg");
+    background-size: 100 vw auto; /* Ajusta el ancho exactamente al tamaño de la pantalla */
+    background-position: top center; /* Centra la imagen */
+    background-repeat: no-repeat;
 }
