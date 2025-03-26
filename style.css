@@ -1,9 +1,8 @@
-/* Configuración general */
-body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    overflow: hidden; /* Para evitar el desplazamiento innecesario */
+    box-sizing: border-box;
 }
 
 /* Fondo con scroll */
@@ -12,18 +11,18 @@ body {
     top: 0;
     left: 0;
     width: 100 vw;
-    height: 100 vh;
+    height: 200 vh; /* El doble de la altura de la pantalla para hacer el scroll */
     background: url('SCROLL LOW REAL.jpeg') repeat-y center;
     background-size: cover;
     opacity: 0.7;
     z-index: -1;
-    animation: scrollBackground 20 s linear infinite;
+    animation: scrollBackground 15 s linear infinite;
 }
 
 /* Animación de desplazamiento del fondo */
 @ keyframes scrollBackground {
-    from { background-position-y: 0; }
-    to { background-position-y: 100vh; }
+    -from { background-position-y: 0; }
+    -to { background-position-y: 100 %; }
 }
 
 /* Contenedor del texto */
@@ -33,21 +32,25 @@ body {
     left: 50 %;
     transform: translate (-50 %, -50 %);
     text-align: center;
-    background: rgba (0, 0, 0, 0.5); /* Rectángulo semiopaco */
-    padding: 20 px;
-    border-radius: 10 px;
 }
 
-/* Título con efecto metálico */
+/* Título con efecto metálico y brillo */
 .title {
-    font-size: 2.5 rem;
+    font-size: 3 rem;
     font-weight: bold;
     color: #B0A6FF; /* Gris lavanda vibrante */
     text-transform: uppercase;
-    text-shadow: 2 px 2 px 5 px rgba (255, 255, 255, 0.8);
+    text-shadow: 2 px 2 px 10 px rgba (255, 255, 255, 0.8);
     background: linear-gradient (135 deg, #a8a7ff, #d1cfff, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: shine 3 s infinite alternate;
+}
+
+/* Animación de brillo */
+@ keyframes shine {
+    -from { text-shadow: 2 px 2 px 10 px rgba (255, 255, 255, 0.8); }
+    -to { text-shadow: 4 px 4 px 20 px rgba (255, 255, 255, 1); }
 }
 
 /* Subtítulo */
