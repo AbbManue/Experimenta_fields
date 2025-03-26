@@ -1,0 +1,31 @@
+/* Estilo para la galería */
+.gallery {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las imágenes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Espacio entre las imágenes */
+}
+
+/* Estilo de las imágenes */
+.interactive-image {
+    width: 150px; /* Tamaño pequeño de la imagen */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para el movimiento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Efecto cuando el usuario pasa el cursor sobre la imagen */
+.interactive-image:hover {
+    transform: scale(1.1) translate(10px, -10px); /* Hace que la imagen crezca un poco y se desplace ligeramente */
+    filter: brightness(1.2); /* Hace que la imagen se ilumine un poco */
+}
