@@ -1,6 +1,6 @@
 /* Asegura que la imagen se vea correctamente */
 img {
-    width: 100 %;
+    width: 100 vw;
     height: auto;
     display: block;
 }
