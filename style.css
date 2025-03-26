@@ -1,62 +1,80 @@
-/* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #2a2a2a; /* Fondo oscuro */
-    color: #fff;
+/* 🔹 Estilos Generales 🔹 */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1a1a1a;
     text-align: center;
+    padding: 20 px;
 }
 
-/* Encabezados principales (Título) */
-h1 {
-    font-size: 3 vw;
-    color: #6a5acd; /* Gris lavanda vibrante */
+/* 🔹 ENCABEZADOS (Tipografía futurista + efecto metálico) 🔹 */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #B5A1FF; /* Gris lavanda vibrante */
     text-transform: uppercase;
-    text-shadow: 0 0 10 px #fff, 0 0 20 px #fff, 0 0 30 px #6a5acd;
+    text-shadow: 0 px 0 px 5 px #fff, 0 px 0 px 10 px #B5A1FF, 0 px 0 px 20 px #B5A1FF;
+    background: linear-gradient (90 deg, #B5A1FF, #ffffff, #B5A1FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Subtítulos */
-h2 {
-    font-size: 2 vw;
-    color: #d4af37; /* Amarillo pastel */
+/* 🔹 CUERPO del texto (Amarillo pastel) 🔹 */
+p {
+    font-size: 1.2 em;
+    color: #F4E76E; /* Amarillo pastel */
+    font-weight: 400;
 }
 
-/* Galería */
+/* 🔹 Galería 🔹 */
 .gallery {
-    margin: 20 px auto;
-    max-width: 90 %;
+    margin-top: 50 px;
 }
 
-/* Contenedor de imágenes */
+/* 🔹 CONTENEDOR de imágenes 🔹 */
 .image-container {
     display: flex;
     justify-content: center;
-    gap: 20 px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 15 px;
+    max-width: 90 %;
+    margin: auto;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
-/* Imágenes Generales */
+/* 🔹 ESTILOS GENERALES para imágenes 🔹 */
 .interactive-image {
-    width: 30 vw; /* Tamaño relativo para mantener proporción */
-    max-height: 50 vh; /* Límite de altura */
-    object-fit: contain; /* Mantiene la proporción sin recortar */
+    width: 30 %;
+    height: auto;
+    transition: transform 0.3 s ease, filter 0.3 s ease, box-shadow 0.3 s ease;
     border-radius: 10 px;
-    transition: transform 0.3 s ease-in-out;
+    object-fit: contain; /* Mantiene las proporciones */
+    box-shadow: 0 px 5 px 15 px rgba (255, 255, 255, 0.2);
 }
 
-/* Efecto al pasar el cursor en todas las imágenes */
+/* 🔹 EFECTO HOVER para todas las imágenes 🔹 */
 .interactive-image:hover {
     transform: scale (1.2);
+    filter: brightness (1.3);
+    box-shadow: 0 px 10 px 20 px rgba (255, 255, 255, 0.3);
 }
 
-/* Imagen Central (Se amplía más que las otras) */
-.main-image:hover {
-    transform: scale (1.8);
+/* 🔹 EFECTO ESPECIAL para la IMAGEN CENTRAL 🔹 */
+.central-image:hover {
+    transform: scale (2); /* Crece más que las otras */
+    transition: transform 0.5 s ease;
+    z-index: 10; /* Se pone encima de las demás */
+    box-shadow: 0 px 15 px 30 px rgba (181, 161, 255, 0.7);
 }
 
-/* Pie de página */
+/* 🔹 FOOTER 🔹 */
 footer {
-    font-size: 1 rem;
-    margin-top: 20 px;
+    margin-top: 50 px;
+    color: #F4E76E;
+    font-size: 1 em;
 }
