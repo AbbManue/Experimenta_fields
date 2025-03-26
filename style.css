@@ -1,61 +1,6 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fondo con scroll */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100 vw;
-    height: 200 vh; /* El doble de la altura de la pantalla para hacer el scroll */
-    background: url('SCROLL LOW REAL.jpeg') repeat-y center;
-    background-size: cover;
-    opacity: 0.7;
-    z-index: -1;
-    animation: scrollBackground 15 s linear infinite;
-}
-
-/* Animación de desplazamiento del fondo */
-@ keyframes scrollBackground {
-    -from { background-position-y: 0; }
-    -to { background-position-y: 100 %; }
-}
-
-/* Contenedor del texto */
-.content {
-    position: absolute;
-    top: 30 %;
-    left: 50 %;
-    transform: translate (-50 %, -50 %);
-    text-align: center;
-}
-
-/* Título con efecto metálico y brillo */
-.title {
-    font-size: 3 rem;
-    font-weight: bold;
-    color: #B0A6FF; /* Gris lavanda vibrante */
-    text-transform: uppercase;
-    text-shadow: 2 px 2 px 10 px rgba (255, 255, 255, 0.8);
-    background: linear-gradient (135 deg, #a8a7ff, #d1cfff, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3 s infinite alternate;
-}
-
-/* Animación de brillo */
-@ keyframes shine {
-    -from { text-shadow: 2 px 2 px 10 px rgba (255, 255, 255, 0.8); }
-    -to { text-shadow: 4 px 4 px 20 px rgba (255, 255, 255, 1); }
-}
-
-/* Subtítulo */
-.subtitle {
-    font-size: 1.2 rem;
-    color: #E6D88E; /* Amarillo pálido */
-    font-weight: normal;
+/* Asegura que la imagen se vea correctamente */
+img {
+    width: 100 %;
+    height: auto;
+    display: block;
 }
