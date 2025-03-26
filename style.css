@@ -10,10 +10,10 @@ body {
 
 /* Encabezados principales (Título) */
 h1 {
-    font-size: 3 vw; /* Ajustable */
+    font-size: 3 vw;
     color: #6a5acd; /* Gris lavanda vibrante */
     text-transform: uppercase;
-    text-shadow: 0 0 10 px #fff, 0 0 20 px #fff, 0 0 30 px #6a5acd; /* Efecto metalizado */
+    text-shadow: 0 0 10 px #fff, 0 0 20 px #fff, 0 0 30 px #6a5acd;
 }
 
 /* Subtítulos */
@@ -32,27 +32,27 @@ h2 {
 .image-container {
     display: flex;
     justify-content: center;
-    gap: 10 px;
-    flex-wrap: wrap;  /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+    gap: 20 px;
+    flex-wrap: wrap;
 }
 
 /* Imágenes Generales */
 .interactive-image {
-    width: 30 %; /* Ocupa el 30% de la pantalla en escritorio */
-    height: auto; /* Mantiene la proporción */
+    width: 30 vw; /* Tamaño relativo para mantener proporción */
+    max-height: 50 vh; /* Límite de altura */
+    object-fit: contain; /* Mantiene la proporción sin recortar */
     border-radius: 10 px;
     transition: transform 0.3 s ease-in-out;
-    object-fit: cover; /* Hace que la imagen se recorte para llenar el contenedor sin distorsión */
 }
 
 /* Efecto al pasar el cursor en todas las imágenes */
 .interactive-image:hover {
-    transform: scale (1.2); /* Aumenta todas las imágenes un 20% */
+    transform: scale (1.2);
 }
 
 /* Imagen Central (Se amplía más que las otras) */
 .main-image:hover {
-    transform: scale (2); /* Aumenta la imagen central el doble */
+    transform: scale (1.8);
 }
 
 /* Pie de página */
