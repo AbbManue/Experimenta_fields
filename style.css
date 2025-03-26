@@ -2,8 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('SCROLL_LOW_REAL.jpeg') no-repeat top center;
-    background-size: 100% auto; /* Ancho completo, alto ajustable */
+    background: url('BACKGROUNDLOW.jpg') no-repeat top center;
+    background-size: 100 % auto; /* Ancho completo, alto ajustable */
     background-attachment: fixed; /* La imagen no se mueve mientras haces scroll */
     opacity: 0.7; /* Opacidad del 70% */
     min-height: 200 vh; /* Hace que la página sea más larga para que haya desplazamiento */
